@@ -1,38 +1,115 @@
 .App {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  text-align: center;
+  margin: 50px 0;
+  color: #159a9c;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/*********Todo Form************/
+.add-task {
+  background-color: #b4bec9;
+  width: 35%;
+  margin: 10px auto;
+  text-align: center;
+  padding: 5px;
+  border-radius: 50px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.add-task form input {
+  padding: 13px;
+  outline: none;
+  border: none;
+  font-size: 1.3rem;
+  width: 75%;
+  background-color: transparent;
+  caret-color: #159a9c;
+  color: #002333;
+}
+.add-task form input::-webkit-input-placeholder {
+  color: #002333;
+}
+.add-task form input::-moz-placeholder {
+  color: #002333;
+}
+.add-task form input:-ms-input-placeholder {
+  color: #002333;
+}
+.add-task form input::-ms-input-placeholder {
+  color: #002333;
+}
+.add-task form input::placeholder {
+  color: #002333;
+}
+.add-task form button,
+.task button {
+  border: none;
+  width: 15%;
+  padding: 0 20px;
+  /* background-color: #deefe7; */
+  background-color: transparent;
+  cursor: pointer;
+}
+.add-task form button {
+  border-radius: 50px;
+}
+.font-icon {
+  font-size: 1.3rem;
+}
+/***********Todo Buttons************/
+.control-btn {
+  background-color: transparent;
+  margin: 20px auto;
+  width: 34%;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
-
-.App-link {
-  color: #61dafb;
+.control-btn button {
+  margin: 5px;
+  padding: 6px 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #159a9c;
+  color: #fff;
+  cursor: pointer;
+  -webkit-transition: all 0.1s;
+  -o-transition: all 0.1s;
+  transition: all 0.1s;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.control-btn button:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+/***********TodoTask*************/
+.task {
+  background-color: #b4bec9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 35%;
+  margin: 10px auto;
+  padding: 10px;
+  border-radius: 35px;
+}
+.task button {
+  width: 10%;
+  padding: 10px 15px;
+  border-radius: 50%;
+}
+.task p {
+  margin: 10px 20px;
 }
